@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>まなびのデジタル教室</title>
+
+    <!-- 外部リンク -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Sawarabi+Mincho&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" href="css/modaal.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>  
+    <header id="header">
+        <!-- メインヘッダー -->
+        <div id="header-main" class="bgc-sub">
+            <div class="school-logo"><img src="./img/logo.png" alt="教室ロゴ"></div>
+
+            <div id="nav-btn">
+                <nav>
+                    <ul>
+                        <li><a href="#info"><p>教室について</p></a></li>
+                        <li><a href="#notice"><p>お知らせ / イベント</p></a></li>
+                        <li><a href="#course"><p>コース案内</p></a></li>
+                        <li><a href="#trialClass"><p>体験教室</p></a></li>
+                        <li><a href="#access"><p>アクセス</p></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- サブヘッダー -->
+        <div id="header-sub">
+            <div class="header-tell">
+                <div class="header-tellNum"><p>tel.052-123-4567</p></div>
+                <p>受付時間 9:00~18:00(日祝休み)</p>
+            </div>
+            <div class="header-inquiBtn">
+                <a href="#"><p>お問い合わせ</p></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--------------- 教室について --------------->
+        <section id="info" class="bgc-main">
+            <div class="section-main">
+                <div class="info-text">
+                    <h2>毎日の暮らしに <span>“つくる”</span> 楽しさを<br>趣味を<span>彩る</span>スマホ・パソコン教室</h2>
+                        <p>「まなびのデジタル工房」では、旅行や記念日に撮影した写真を使って、写真アルバムづくりからWebサイト制作まで、さまざまな作品づくりを楽しんでいただけます。</p>
+                    <p>スマホやパソコンが苦手な方でも、難しい専門用語は使わず、ゆっくり・わかるまで丁寧にサポートします。</p>
+                </div>
+                <div class="info-img"></div>
+            </div>
+        </section>
+
+        <!--------------- お知らせ/イベント --------------->
+        <section id="notice" class="bgc-sub">
+            <div class="section-main">
+                <!-- タイトル -->
+                <div class="notice-title section-title">
+                    <h1>お知らせ / イベント</h1>
+                </div>
+                <!-- スライダー -->
+                <ul id="cards-slide" class="slider">
+                    <li class="notice-card-wrap">
+                        <div>
+                            <div class="notice-card">
+                                <div class="notice-card-text"> 
+                                    <h2>入学希望者限定の体験レッスン受付中</h2>
+                                    <p>初めての方向けに、写真加工でポストカードを作る体験レ...</p>
+                                </div>
+                                <div class="notice-card-about"><a href="#"><p>詳細へ</p></a></div>
+                                <img src="./img/notice-img1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notice-card-wrap">
+                        <div class="notice-card">
+                            <div class="notice-card-text"> 
+                                <h2>パソコン・スマホ相談会（無料）のお知らせ</h2>
+                                <p>「これどうやるの？」にお答えする無料相談会を開催しま...</p>
+                            </div>
+                            <div class="notice-card-about"><a href="#"><p>詳細へ</p></a></div>
+                            <img src="./img/notice-img2.png" alt="">
+                        </div>
+                    </li>
+                    <li class="notice-card-wrap">
+                        <div class="notice-card">
+                            <div class="notice-card-text"> 
+                                <h2>年末の年賀状づくりイベント</h2>
+                                <p>今年会った楽しいことを親戚や友人にお知らせしましょう</p>
+                            </div>
+                            <div class="notice-card-about"><a href="#"><p>詳細へ</p></a></div>
+                            <img src="./img/notice-img3.png" alt="">
+                        </div>
+                    </li>
+                    <li class="notice-card-wrap">
+                        <div class="notice-card">
+                            <div class="notice-card-text"> 
+                                <h2>教室で作品発表ミニギャラリー公開</h2>
+                                <p>生徒さんの作品を、教室内にミニギャラリーとして展示...</p>
+                            </div>
+                            <div class="notice-card-about"><a href="#"><p>詳細へ</p></a></div>
+                            <img src="./img/notice-img4.png" alt="">
+                        </div>
+                    </li>
+                    <li class="notice-card-wrap">
+                        <div class="notice-card">
+                            <div class="notice-card-text"> 
+                                <h2>2026年カレンダーづくりワークショップ開催</h2>
+                                <p>旅行や家族写真を持ち寄って、テンプレートを使いながら...</p>
+                            </div>
+                            <div class="notice-card-about"><a href="#"><p>詳細へ</p></a></div>
+                            <img src="./img/notice-img5.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--------------- コース案内 ---------------> 
+        <section id="course" class="bgc-main">
+            <div class="section-main">
+                <!-- タイトル -->
+                <div class="course-title section-title">
+                    <h1>コース案内</h1>
+                </div>
+                <!-- 各コース情報 -->
+                <div class="courseInfo-cards">
+                    <!-- デジタルスタートコース -->
+                    <div class="courseInfo" data-aos="fade" data-aos-once="true">
+                        <div class="courseInfo-title">
+                            <div class="courseInfo-title-text">
+                                <h2>デジタルスタート<br>コース</h2>
+                                <h3>初心者向け</h3>
+                            </div>
+                            <div class="courseInfo-title-img">
+                                <img src="./img/start-course.jpg" alt="スタートコース">
+                            </div>
+                        </div>
+                        <div class="courseInfo-text">
+                            <p>スマホやパソコンが苦手な方でも安心して学べる基礎コースです。電源の入れ方や文字入力、写真の保存、LINEの使い方など、日常で使う操作をわかりやすく練習します。</p>
+                        </div>
+                        <div class="courseInfo-line"></div>
+                        <div class="reaction">
+                            <div class="reaction-text">
+                                <div class="reaction-name">
+                                    <h4>スマホ・パソコンスタートコース受講生<br>舞元さん 58歳</h4>
+                                </div>
+                                <div class="reaction-sentence">
+                                    <p>本当に基礎から丁寧に教えてもらえて、普段からわからず困っていたことも気軽に質問できました。</p>
+                                </div>
+                            </div>
+                            <div class="reaction-img"><img src="./img/start-reaction.jpg" alt=""></div>
+                        </div>
+                    </div>
+        
+                    <!--------------- 写真アルバム制作コース --------------->
+                    <div class="courseInfo" data-aos="fade" data-aos-once="true"  data-aos-delay="200">
+                        <!-- タイトル -->
+                        <div class="courseInfo-title">
+                            <div class="courseInfo-title-text">
+                                <h2>写真アルバム<br>制作コース</h2>
+                                <h3>中級者向け</h3>
+                            </div>
+                            <div class="courseInfo-title-img">
+                                <img src="./img/photoAlbum-course.jpg" alt="スタートコース">
+                            </div>
+                        </div>
+                        <div class="courseInfo-text">
+                            <p>旅行や家族の思い出写真を使って、アルバム制作するコースです。写真の整理、レイアウト、簡単な画像調整まで、作品づくりを通して自然とデジタル操作に慣れていけます。</p>
+                        </div>
+                        <div class="courseInfo-line"></div>
+                        <div class="reaction">
+                            <div class="reaction-text">
+                                <div class="reaction-name">
+                                    <h4>写真アルバム制作コース受講生<br>長瀬さん 54歳</h4>
+                                </div>
+                                <div class="reaction-sentence">
+                                    <p>写真をきれいにまとめられて、思い出がまたよみがえりました。作っていてとても楽しかったです。</p>
+                                </div>
+                            </div>
+                            <div class="reaction-img"><img src="./img/photoAlbum-reaction.jpg" alt=""></div>
+                        </div>
+                    </div>
+        
+                    <!--------------- イラストデザインコース --------------->
+                    <div class="courseInfo" data-aos="fade" data-aos-once="true" >
+                        <div class="courseInfo-title">
+                            <div class="courseInfo-title-text">
+                                <h2>イラストデザイン<br>コース</h2>
+                                <h3>中級者向け</h3>
+                            </div>
+                            <div class="courseInfo-title-img">
+                                <img src="./img/IllustDesign-course.jpg" alt="スタートコース">
+                            </div>
+                        </div>
+                        <div class="courseInfo-text">
+                            <p>canvaなどのデジタルツールを使って、簡単なイラストやデザインをつくるコースです。塗り絵感覚の画像編集から、SNSに載せられるバナーづくりまで、楽しみながら創作の幅が広がります。</p>
+                        </div>
+                        <div class="courseInfo-line"></div>
+                        <div class="reaction">
+                            <div class="reaction-text">
+                                <div class="reaction-name">
+                                    <h4>イラストデザインコース受講生<br>琵琶さん 56歳</h4>
+                                </div>
+                                <div class="reaction-sentence">
+                                    <p>絵が苦手な私でも、少しずつ形になっていくのが嬉しくて、夢中になってしまいました。</p>
+                                </div>
+                            </div>
+                            <div class="reaction-img"><img src="./img/illustDesign-reaction.jpg" alt=""></div>
+                        </div>
+                    </div>
+        
+                    <!--------------- Webサイト制作コース --------------->
+                    <div class="courseInfo" data-aos="fade" data-aos-once="true" data-aos-delay="200">
+                        <div class="courseInfo-title">
+                            <div class="courseInfo-title-text">
+                                <h2>Webサイト<br>制作コース</h2>
+                                <h3>上級者向け</h3>
+                            </div>
+                            <div class="courseInfo-title-img">
+                                <img src="./img/webDesign-course.jpg" alt="スタートコース">
+                            </div>
+                        </div>
+                        <div class="courseInfo-text">
+                            <p>自分だけのシンプルなWebページを作りたい方のためのコースです。趣味の発信や作品集づくりにもぴったりで、形として残る“自分のサイト”が完成します。</p>
+                        </div>
+                        <div class="courseInfo-line"></div>
+                        <div class="reaction">
+                            <div class="reaction-text">
+                                <div class="reaction-name">
+                                    <h4>Webサイト制作コース受講生<br>野田さん 53歳</h4>
+                                </div>
+                                <div class="reaction-sentence">
+                                    <p>Webサイトを作ることは難しいと思っていましたが、無事に完成したページを見て感動しました。</p>
+                                </div>
+                            </div>
+                            <div class="reaction-img"><img src="./img/webDesign-reaction.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------- 体験教室 -------------> 
+        <section id="trialClass" class="bgc-sub">
+            <div class="section-main">
+                <!-- タイトル -->
+                <div class="trialClass-title section-title">
+                    <h1>体験教室</h1>
+                </div>
+                <div class="trialClass-info">
+                    <h2>まずは<span>”気軽にお試し”</span>から。楽しさと安心を実感できる体験レッスン</h2>
+                    <p>教室の雰囲気や学び方を知ることができるので、はじめの一歩にぴったりです。</p>
+                </div>
+                <div class="trialClass-main">
+                    <!-- 体験内容 -->
+                    <div class="trialClass-content">
+                        <h2>体験内容：ポストカードを作ってみよう</h2>
+                        <p>お気に入りの写真を加工して、世界にひとつだけのポストカードを作る体験レッスンです。</p>
+                        <p>初心者の方でも簡単に扱える操作を中心に進めていきます</p>
+                        <p>完成したカードはそのままお持ち帰りいただけますので、“自分で作れた” という小さな感動を味わっていただけます。</p>
+                    </div>
+                    <!-- お問い合わせ -->
+                    <div class="trialClass-inquiry">
+                        <div class="trialClass-inquiry-tel">
+                            <h4>お電話でお申し込み</h4>
+                            <h3>052-123-4567</h3>
+                            <p>受付時間 9:00~18:00(日祝休み)</p>
+                        </div>
+                        <a href="#" class="inquiresBtn"><p>お問い合わせフォームから<br>お申し込み</p></a>
+                    </div>
+                </div>
+                <!-- 写真 -->
+                <div class="trialClass-img-base trialClass-img1" data-aos="fade-right">
+                    <img src="./img/trialClass-image1.png" alt="">
+                </div>
+                <div class="trialClass-img-base trialClass-img2" data-aos="fade-left">
+                    <img src="./img/trialClass-image2.png" alt="">
+                </div>
+                <div class="trialClass-img-base trialClass-img3" data-aos="fade-left">
+                    <img src="./img/trialClass-image3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--------------- アクセス ---------------> 
+        <section id="access" class="bgc-main">
+            <div class="section-main section-center">
+                <!-- タイトル -->
+                <div class="section-title">
+                    <h1>アクセス</h1>
+                </div>
+                <div class="access-main">
+                    <div class="access-info">
+                        <div class="travelTime">
+                            <h2>名古屋駅から<br>徒歩<span>10</span>分</h2>
+                        </div>
+                        <div class="address"><p>愛知県名古屋市中村区<br>太閤3丁目2-13</p></div>
+                        <div class="mapBtn">
+                            <a href="#map-modal" class="ja-modaal">
+                                <p>GoogleMapでみる</p>
+                            </a>
+                            <div id="map-modal" style="display:none;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6523.146636796608!2d136.87617821110388!3d35.16726057264386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037700660ed171%3A0x11ec152d19b645c!2z44OQ44Oz44K_44Oz5ZCN5Y-k5bGL5qCh!5e0!3m2!1sja!2sjp!4v1768556496855!5m2!1sja!2sjp" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="access-map">
+                        <img src="./img/map.png" alt="教室近辺のマップ">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------- お問い合わせ ---------------> 
+        <section id="inquiry" class="bgc-sub">
+            <div class="inquiry-bg">
+                <div class="section-main section-center">
+                    <!-- タイトル -->
+                    <div class="section-title">
+                        <h1>お問い合わせ</h1>
+                    </div>
+                    <div class="inquiry-tel">
+                        <div class="inquiry-telText">
+                            <p>お電話での<br>お問い合わせ</p>
+                        </div>
+                        <div class="inquiry-telNumber">
+                            <h2>052-123-4567</h2>
+                        </div>
+                        <div class="inquiry-telTime">
+                            <p>受付時間<br><span>9:00~18:00</span> (日祝休み)</p>
+                        </div>
+                    </div>
+                    <a href="#" class="inquiresBtn"><p>お問い合わせフォーム</p></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--------------- フッター --------------->
+    <footer><small>©︎ Manabi no DigitalKobo</small></footer>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/modaal.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
